@@ -1,6 +1,6 @@
 classification	color	n_leaves
-Central metabolism	#FF0000	14
-Recruited Enzyme (MIBiG)	#4169E1	30
-Secondary metabolism (EvoMining Hit)	#a5bb47	49
+Central metabolism	#FF0000	17
+Recruited Enzyme (MIBiG)	#4169E1	24
+Secondary metabolism (EvoMining Hit)	#a5bb47	45
 Seed Enzyme	#FFA500	4
-expansion	#808080	4
+expansion	#808080	10

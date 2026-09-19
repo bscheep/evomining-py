@@ -1,151 +1,168 @@
 protein_id	function
-GCF_000010425.1__BAD_RS01040	phosphogluconate dehydrogenase (NAD(+)-dependent, decarboxylating)
-GCF_000010425.1__BAD_RS01640	D-2-hydroxyacid dehydrogenase family protein
-GCF_000010425.1__BAD_RS02035	phosphoserine transaminase
-GCF_000010425.1__BAD_RS05165	D-2-hydroxyacid dehydrogenase
-GCF_000010425.1__BAD_RS05895	phosphoglycerate dehydrogenase
-GCF_000014925.1__AAUR_RS00345	D-2-hydroxyacid dehydrogenase family protein
-GCF_000014925.1__AAUR_RS03160	phosphoglycerate dehydrogenase
-GCF_000014925.1__AAUR_RS05080	phosphoserine transaminase
-GCF_000014925.1__AAUR_RS09710	2-hydroxyacid dehydrogenase
-GCF_000014925.1__AAUR_RS12090	D-2-hydroxyacid dehydrogenase
-GCF_000014925.1__AAUR_RS12500	phosphoglycerate dehydrogenase
-GCF_000014925.1__AAUR_RS17530	pyridoxal-phosphate-dependent aminotransferase family protein
-GCF_000014925.1__AAUR_RS19655	hydroxyacid dehydrogenase
-GCF_000014925.1__AAUR_RS20705	2-hydroxyacid dehydrogenase
-GCF_000014925.1__AAUR_RS22945	hydroxyacid dehydrogenase
-GCF_000022025.1__ACHL_RS00150	2-hydroxyacid dehydrogenase
-GCF_000022025.1__ACHL_RS00185	2-hydroxyacid dehydrogenase
-GCF_000022025.1__ACHL_RS00455	2-hydroxyacid dehydrogenase
-GCF_000022025.1__ACHL_RS00665	C-terminal binding protein
-GCF_000022025.1__ACHL_RS00725	D-2-hydroxyacid dehydrogenase
-GCF_000022025.1__ACHL_RS00965	2-hydroxyacid dehydrogenase
-GCF_000022025.1__ACHL_RS01095	D-2-hydroxyacid dehydrogenase
-GCF_000022025.1__ACHL_RS02325	2-hydroxyacid dehydrogenase
-GCF_000022025.1__ACHL_RS03540	D-2-hydroxyacid dehydrogenase family protein
-GCF_000022025.1__ACHL_RS04595	phosphoserine transaminase
-GCF_000022025.1__ACHL_RS06500	aminotransferase class V-fold PLP-dependent enzyme
-GCF_000022025.1__ACHL_RS11495	phosphoglycerate dehydrogenase
-GCF_000022025.1__ACHL_RS12070	aminotransferase class V-fold PLP-dependent enzyme
-GCF_000022025.1__ACHL_RS17865	hydroxyacid dehydrogenase
-GCF_000023245.1__AMIR_RS02590	phosphoserine transaminase
-GCF_000023245.1__AMIR_RS35700	hydroxyacid dehydrogenase
-GCF_000023245.1__AMIR_RS20750	hydroxyacid dehydrogenase
-GCF_000023245.1__AMIR_RS28370	aminotransferase class V-fold PLP-dependent enzyme
-GCF_000023245.1__AMIR_RS28795	FAD-dependent thymidylate synthase
-GCF_000023245.1__AMIR_RS29825	phosphoglycerate dehydrogenase
-GCF_000023245.1__AMIR_RS29875	2-hydroxyacid dehydrogenase
-GCF_000024025.1__CACI_RS00640	hydroxyacid dehydrogenase
-GCF_000024025.1__CACI_RS01485	Glu/Leu/Phe/Val family dehydrogenase
-GCF_000024025.1__CACI_RS03080	hydroxyacid dehydrogenase
-GCF_000024025.1__CACI_RS07995	hydroxyacid dehydrogenase
-GCF_000024025.1__CACI_RS13375	hydroxyacid dehydrogenase
-GCF_000024025.1__CACI_RS18925	hydroxyacid dehydrogenase
-GCF_000024025.1__CACI_RS26150	D-2-hydroxyacid dehydrogenase family protein
-GCF_000024025.1__CACI_RS28705	D-lactate dehydrogenase VanH
-GCF_000024025.1__CACI_RS33305	hydroxyacid dehydrogenase
-GCF_000024025.1__CACI_RS33810	2-hydroxyacid dehydrogenase
-GCF_000024025.1__CACI_RS38500	phosphoglycerate dehydrogenase
-GCF_000024025.1__CACI_RS43455	phosphoserine transaminase
-GCF_000063485.1__CMM_RS00465	phosphogluconate dehydrogenase (NAD(+)-dependent, decarboxylating)
-GCF_000063485.1__CMM_RS02850	NAD-dependent epimerase/dehydratase family protein
-GCF_000063485.1__CMM_RS04130	endonuclease/exonuclease/phosphatase family protein
-GCF_000063485.1__CMM_RS06110	phosphoglycerate dehydrogenase
-GCF_000063485.1__CMM_RS06220	uracil-DNA glycosylase
-GCF_000063485.1__CMM_RS08630	D-isomer specific 2-hydroxyacid dehydrogenase family protein
-GCF_000063485.1__CMM_RS11775	SufS family cysteine desulfurase
-GCF_000063485.1__CMM_RS13155	phosphoserine transaminase
-GCF_000063485.1__CMM_RS15455	zinc-dependent alcohol dehydrogenase
-GCF_000189535.1__ASPHE3_RS03000	D-2-hydroxyacid dehydrogenase family protein
-GCF_000189535.1__ASPHE3_RS04085	phosphoserine transaminase
-GCF_000189535.1__ASPHE3_RS04655	2-hydroxyacid dehydrogenase
-GCF_000189535.1__ASPHE3_RS06160	cysteine desulfurase
-GCF_000189535.1__ASPHE3_RS08490	2-hydroxyacid dehydrogenase
-GCF_000189535.1__ASPHE3_RS11875	phosphoglycerate dehydrogenase
-GCF_000189535.1__ASPHE3_RS12440	aminotransferase class V-fold PLP-dependent enzyme
-GCF_000195815.1__DIP_RS15180	phosphoserine transaminase
-GCF_000195815.1__DIP_RS15735	D-isomer specific 2-hydroxyacid dehydrogenase family protein
-GCF_000195815.1__DIP_RS16715	phosphoglycerate dehydrogenase
-GCF_000195815.1__DIP_RS21940	type I polyketide synthase
-GCF_000196835.1__AMED_RS08580	2-hydroxyacid dehydrogenase
-GCF_000196835.1__AMED_RS08645	phosphoglycerate dehydrogenase
-GCF_000196835.1__AMED_RS09450	2-hydroxyacid dehydrogenase
-GCF_000196835.1__AMED_RS10575	2-hydroxyacid dehydrogenase
-GCF_000196835.1__AMED_RS13870	D-2-hydroxyacid dehydrogenase family protein
-GCF_000196835.1__AMED_RS16230	hydroxyacid dehydrogenase
-GCF_000196835.1__AMED_RS22855	phosphoenolpyruvate--protein phosphotransferase
-GCF_000196835.1__AMED_RS27250	hydroxyacid dehydrogenase
-GCF_000196835.1__AMED_RS32400	aminotransferase class V-fold PLP-dependent enzyme
-GCF_000196835.1__AMED_RS35570	Glu/Leu/Phe/Val dehydrogenase dimerization domain-containing protein
-GCF_000196835.1__AMED_RS37155	2-hydroxy-3-oxopropionate reductase
-GCF_000196835.1__AMED_RS37165	D-2-hydroxyacid dehydrogenase
-GCF_000196835.1__AMED_RS40285	D-2-hydroxyacid dehydrogenase
-GCF_000196835.1__AMED_RS42405	D-isomer specific 2-hydroxyacid dehydrogenase family protein
-GCF_000196835.1__AMED_RS43260	phosphoserine transaminase
-GCF_000196835.1__AMED_RS44675	Rossmann-like and DUF2520 domain-containing protein
-GCF_000237145.1__ACPL_RS00015	phosphogluconate dehydrogenase (NAD(+)-dependent, decarboxylating)
-GCF_000237145.1__ACPL_RS00640	Glu/Leu/Phe/Val dehydrogenase
-GCF_000237145.1__ACPL_RS02195	phosphoserine transaminase
-GCF_000237145.1__ACPL_RS05880	phosphoglycerate dehydrogenase
-GCF_000237145.1__ACPL_RS12555	TetR/AcrR family transcriptional regulator
-GCF_000237145.1__ACPL_RS20085	C-terminal binding protein
-GCF_000237145.1__ACPL_RS26770	NAD(P)-dependent oxidoreductase
-GCF_000237145.1__ACPL_RS31430	aminotransferase class V-fold PLP-dependent enzyme
-GCF_000237145.1__ACPL_RS35985	phosphoglycerate dehydrogenase
-GCF_000237145.1__ACPL_RS39180	TrkA family potassium uptake protein
-GCF_000342005.1__H074_RS02975	Rossmann-like and DUF2520 domain-containing protein
-GCF_000342005.1__H074_RS06335	hydroxyacid dehydrogenase
-GCF_000342005.1__H074_RS14470	NAD(P)-dependent oxidoreductase
-GCF_000342005.1__H074_RS16630	D-2-hydroxyacid dehydrogenase family protein
-GCF_000342005.1__H074_RS17470	2-hydroxyacid dehydrogenase
-GCF_000342005.1__H074_RS18655	phosphoglycerate dehydrogenase
-GCF_000342005.1__H074_RS18710	2-hydroxyacid dehydrogenase
-GCF_000342005.1__H074_RS21540	aminotransferase class V-fold PLP-dependent enzyme
-GCF_000342005.1__H074_RS24825	2-hydroxyacid dehydrogenase
-GCF_000342005.1__H074_RS27440	phosphoserine transaminase
-GCF_000342005.1__H074_RS27980	glycine oxidase ThiO
-GCF_000342005.1__H074_RS29860	D-2-hydroxyacid dehydrogenase
-GCF_000342005.1__H074_RS30545	Glu/Leu/Phe/Val family dehydrogenase
-GCF_000342005.1__H074_RS31635	VanH-AOV family D-lactate dehydrogenase
-GCF_000342005.1__H074_RS35320	adenosylhomocysteinase
-GCF_000389965.1__L083_RS00015	phosphogluconate dehydrogenase (NAD(+)-dependent, decarboxylating)
-GCF_000389965.1__L083_RS02530	phosphoserine transaminase
-GCF_000389965.1__L083_RS04080	hypothetical protein
-GCF_000389965.1__L083_RS06940	phosphoglycerate dehydrogenase
-GCF_000389965.1__L083_RS08420	NAD(P)-dependent oxidoreductase
-GCF_000389965.1__L083_RS08995	adenosylhomocysteinase
-GCF_000389965.1__L083_RS09040	aspartate-semialdehyde dehydrogenase
-GCF_000389965.1__L083_RS11245	FAD-binding oxidoreductase
-GCF_000389965.1__L083_RS13340	D-2-hydroxyacid dehydrogenase
-GCF_000389965.1__L083_RS17300	D-2-hydroxyacid dehydrogenase family protein
-GCF_000389965.1__L083_RS21740	2-hydroxyacid dehydrogenase
-GCF_000389965.1__L083_RS33785	phosphoglycerate dehydrogenase
-GCF_000400635.2__AORI_RS48360	D-lactate dehydrogenase VanH-Ao2
-GCF_000400635.2__AORI_RS49815	Glu/Leu/Phe/Val family dehydrogenase
-GCF_000400635.2__AORI_RS52055	aminotransferase class V-fold PLP-dependent enzyme
-GCF_000400635.2__AORI_RS54550	D-2-hydroxyacid dehydrogenase family protein
-GCF_000400635.2__AORI_RS58405	hydroxyacid dehydrogenase
-GCF_000400635.2__AORI_RS62895	adenosylhomocysteinase
-GCF_000400635.2__AORI_RS70205	2-hydroxyacid dehydrogenase
-GCF_000400635.2__AORI_RS71165	2-hydroxyacid dehydrogenase
-GCF_000400635.2__AORI_RS72155	phosphoglycerate dehydrogenase
-GCF_000400635.2__AORI_RS72235	2-hydroxyacid dehydrogenase
-GCF_000400635.2__AORI_RS74545	D-2-hydroxyacid dehydrogenase
-GCF_000400635.2__AORI_RS77260	phosphoserine transaminase
-GCF_000400635.2__AORI_RS77835	glycine oxidase ThiO
-GCF_000400635.2__AORI_RS78295	2-hydroxyacid dehydrogenase
-GCF_000400635.2__AORI_RS78560	Rossmann-like and DUF2520 domain-containing protein
-GCF_000400635.2__AORI_RS83150	NAD(P)-dependent oxidoreductase
-GCF_000720955.1__IH05_RS0103825	phosphoserine transaminase
-GCF_000720955.1__IH05_RS0104130	Gfo/Idh/MocA family protein
-GCF_000720955.1__IH05_RS0108370	SDR family NAD(P)-dependent oxidoreductase
-GCF_000720955.1__IH05_RS0113705	D-2-hydroxyacid dehydrogenase
-GCF_000720955.1__IH05_RS0114360	2-hydroxyacid dehydrogenase
-GCF_000720955.1__IH05_RS0114425	phosphoglycerate dehydrogenase
-GCF_000720955.1__IH05_RS0115695	cysteine desulfurase
-GCF_000720955.1__IH05_RS0119755	pyridoxal-phosphate-dependent aminotransferase family protein
-GCF_000720955.1__IH05_RS0123560	NAD(P)-dependent oxidoreductase
-GCF_000720955.1__IH05_RS0124010	aminotransferase class V-fold PLP-dependent enzyme
-GCF_000720955.1__IH05_RS43660	putative baseplate assembly protein
-GCF_000720955.1__IH05_RS0130695	hypothetical protein
-GCF_000720955.1__IH05_RS0132645	2-hydroxyacid dehydrogenase
+GCF_000010425.1__HMNFIE_00215	phosphogluconate dehydrogenase (NAD(+)-dependent, decarboxylating)
+GCF_000010425.1__HMNFIE_00332	4-phosphoerythronate dehydrogenase
+GCF_000010425.1__HMNFIE_00413	phosphoserine transaminase
+GCF_000010425.1__HMNFIE_01049	D-3-phosphoglycerate dehydrogenase
+GCF_000010425.1__HMNFIE_01201	phosphoglycerate dehydrogenase
+GCF_000014925.1__GAALLP_00071	D-isomer specific 2-hydroxyacid dehydrogenase family protein
+GCF_000014925.1__GAALLP_00650	D-isomer specific 2-hydroxyacid dehydrogenase family protein
+GCF_000014925.1__GAALLP_01047	phosphoserine transaminase
+GCF_000014925.1__GAALLP_01993	Glyoxylate reductase
+GCF_000014925.1__GAALLP_02475	D-isomer specific 2-hydroxyacid dehydrogenase family protein
+GCF_000014925.1__GAALLP_02557	phosphoglycerate dehydrogenase
+GCF_000014925.1__GAALLP_03596	Serine--pyruvate aminotransferase
+GCF_000014925.1__GAALLP_04027	Putative 2-hydroxyacid-family dehydrogenase
+GCF_000014925.1__GAALLP_04237	Glyoxylate reductase
+GCF_000014925.1__GAALLP_04711	D-isomer specific 2-hydroxyacid dehydrogenase family protein
+GCF_000021425.1__HLOIDO_00610	Phosphoglycerate dehydrogenase-like oxidoreductase
+GCF_000021425.1__HLOIDO_00827	phosphoserine transaminase
+GCF_000021425.1__HLOIDO_00943	Phosphoglycerate dehydrogenase-like oxidoreductase
+GCF_000021425.1__HLOIDO_01254	Cysteine desulfurase
+GCF_000021425.1__HLOIDO_01723	Phosphoglycerate dehydrogenase-like oxidoreductase
+GCF_000021425.1__HLOIDO_02409	phosphoglycerate dehydrogenase
+GCF_000021425.1__HLOIDO_02524	Cysteine desulfurase
+GCF_000022025.1__JBDPLC_00030	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000022025.1__JBDPLC_00037	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000022025.1__JBDPLC_00092	Glyoxylate reductase
+GCF_000022025.1__JBDPLC_00135	C-terminal binding protein
+GCF_000022025.1__JBDPLC_00147	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000022025.1__JBDPLC_00196	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000022025.1__JBDPLC_00222	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000022025.1__JBDPLC_00475	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000022025.1__JBDPLC_00718	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000022025.1__JBDPLC_00930	phosphoserine transaminase
+GCF_000022025.1__JBDPLC_01321	Cysteine desulfurase
+GCF_000022025.1__JBDPLC_02337	phosphoglycerate dehydrogenase
+GCF_000022025.1__JBDPLC_02454	Cysteine desulfurase
+GCF_000022025.1__JBDPLC_03635	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000023245.1__PHJIBM_00529	phosphoserine transaminase
+GCF_000023245.1__PHJIBM_02968	Hydroxyacid dehydrogenase
+GCF_000023245.1__PHJIBM_04222	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000023245.1__PHJIBM_05792	putative hercynylcysteine sulfoxide lyase
+GCF_000023245.1__PHJIBM_05880	FAD-dependent thymidylate synthase
+GCF_000023245.1__PHJIBM_06089	phosphoglycerate dehydrogenase
+GCF_000023245.1__PHJIBM_06099	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000024025.1__DCMODH_00130	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000024025.1__DCMODH_00303	Glu/Leu/Phe/Val dehydrogenase dimerisation region
+GCF_000024025.1__DCMODH_00634	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000024025.1__DCMODH_01618	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000024025.1__DCMODH_02703	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000024025.1__DCMODH_03834	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000024025.1__DCMODH_05307	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000024025.1__DCMODH_05823	D-lactate dehydrogenase VanH
+GCF_000024025.1__DCMODH_06753	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000024025.1__DCMODH_06858	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding
+GCF_000024025.1__DCMODH_07825	phosphoglycerate dehydrogenase
+GCF_000024025.1__DCMODH_08839	phosphoserine transaminase
+GCF_000063485.1__EEPGBJ_00003	phosphogluconate dehydrogenase (NAD(+)-dependent, decarboxylating)
+GCF_000063485.1__EEPGBJ_00504	NAD-dependent epimerase/dehydratase domain-containing protein
+GCF_000063485.1__EEPGBJ_00763	Endonuclease/exonuclease/phosphatase domain-containing protein
+GCF_000063485.1__EEPGBJ_01165	phosphoglycerate dehydrogenase
+GCF_000063485.1__EEPGBJ_01186	uracil-DNA glycosylase
+GCF_000063485.1__EEPGBJ_01673	Glyoxylate/hydroxypyruvate reductase B
+GCF_000063485.1__EEPGBJ_02309	Cysteine desulfurase
+GCF_000063485.1__EEPGBJ_02587	phosphoserine transaminase
+GCF_000063485.1__EEPGBJ_03049	Formaldehyde dismutase
+GCF_000189535.1__HLOIDO_00610	Phosphoglycerate dehydrogenase-like oxidoreductase
+GCF_000189535.1__HLOIDO_00827	phosphoserine transaminase
+GCF_000189535.1__HLOIDO_00943	Phosphoglycerate dehydrogenase-like oxidoreductase
+GCF_000189535.1__HLOIDO_01254	Cysteine desulfurase
+GCF_000189535.1__HLOIDO_01723	Phosphoglycerate dehydrogenase-like oxidoreductase
+GCF_000189535.1__HLOIDO_02409	phosphoglycerate dehydrogenase
+GCF_000189535.1__HLOIDO_02524	Cysteine desulfurase
+GCF_000195815.1__HJNBJO_00766	phosphoserine transaminase
+GCF_000195815.1__HJNBJO_00881	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein
+GCF_000195815.1__HJNBJO_01078	phosphoglycerate dehydrogenase
+GCF_000195815.1__HJNBJO_02153	Modular polyketide synthase
+GCF_000196835.1__COODHM_01726	Phosphoglycerate dehydrogenase
+GCF_000196835.1__COODHM_01739	phosphoglycerate dehydrogenase
+GCF_000196835.1__COODHM_01901	Glyoxylate reductase )
+GCF_000196835.1__COODHM_02128	D-3-phosphoglycerate dehydrogenase (EC)
+GCF_000196835.1__COODHM_02792	D-3-phosphoglycerate dehydrogenase (EC)
+GCF_000196835.1__COODHM_03271	D-isomer specific 2-hydroxyacid dehydrogenase, NAD-binding protein
+GCF_000196835.1__COODHM_04602	Phosphoenolpyruvate-protein phosphotransferase
+GCF_000196835.1__COODHM_05483	2-hydroxyacid dehydrogenase
+GCF_000196835.1__COODHM_06500	Aminotransferase class V
+GCF_000196835.1__COODHM_07136	Branched-chain amino acid dehydrogenase [deaminating] )
+GCF_000196835.1__COODHM_07449	2-hydroxy-3-oxopropionate reductase
+GCF_000196835.1__COODHM_07451	D-isomer specific 2-hydroxyacid dehydrogenase, NAD-binding protein
+GCF_000196835.1__COODHM_08067	Phosphoglycerate dehydrogenase
+GCF_000196835.1__COODHM_08497	D-lactate dehydrogenase
+GCF_000196835.1__COODHM_08670	phosphoserine transaminase
+GCF_000196835.1__COODHM_08953	Ketopantoate reductase PanG (EC)
+GCF_000197735.1__AOHCGL_00463	D-2-hydroxyacid dehydrogenase family protein
+GCF_000197735.1__AOHCGL_00620	phosphoserine transaminase
+GCF_000197735.1__AOHCGL_00714	2-hydroxyacid dehydrogenase
+GCF_000197735.1__AOHCGL_01136	Alanine--glyoxylate aminotransferase family protein
+GCF_000197735.1__AOHCGL_01483	Hydroxyacid dehydrogenase
+GCF_000197735.1__AOHCGL_01536	phosphoglycerate dehydrogenase
+GCF_000224415.1__KGNJMP_00350	phosphoglycerate dehydrogenase
+GCF_000224415.1__KGNJMP_00572	Phosphoglycerate dehydrogenase-like enzyme
+GCF_000224415.1__KGNJMP_00759	phosphoserine transaminase
+GCF_000224415.1__KGNJMP_01445	Homoserine dehydrogenase
+GCF_000237145.1__KPHHJF_00002	phosphogluconate dehydrogenase (NAD(+)-dependent, decarboxylating)
+GCF_000237145.1__KPHHJF_00129	Leucine dehydrogenase
+GCF_000237145.1__KPHHJF_00445	phosphoserine transaminase
+GCF_000237145.1__KPHHJF_01198	phosphoglycerate dehydrogenase
+GCF_000237145.1__KPHHJF_02561	Transcriptional regulator, TetR family
+GCF_000237145.1__KPHHJF_04095	D-3-phosphoglycerate dehydrogenase
+GCF_000237145.1__KPHHJF_05449	Erythronate-4-phosphate dehydrogenase
+GCF_000237145.1__KPHHJF_06451	Aminotransferase class V
+GCF_000237145.1__KPHHJF_07377	phosphoglycerate dehydrogenase
+GCF_000237145.1__KPHHJF_08024	Putative potassium channel protein 2
+GCF_000342005.1__HPDDJO_00589	Ketopantoate reductase PanG
+GCF_000342005.1__HPDDJO_01274	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein
+GCF_000342005.1__HPDDJO_02931	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding protein
+GCF_000342005.1__HPDDJO_03370	Phosphoglycerate dehydrogenase
+GCF_000342005.1__HPDDJO_03541	Glyoxylate reductase
+GCF_000342005.1__HPDDJO_03786	phosphoglycerate dehydrogenase
+GCF_000342005.1__HPDDJO_03797	Phosphoglycerate dehydrogenase
+GCF_000342005.1__HPDDJO_04371	Aminotransferase class V domain-containing protein
+GCF_000342005.1__HPDDJO_05041	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein
+GCF_000342005.1__HPDDJO_05576	phosphoserine transaminase
+GCF_000342005.1__HPDDJO_05684	glycine oxidase ThiO
+GCF_000342005.1__HPDDJO_06066	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein
+GCF_000342005.1__HPDDJO_06207	Valine dehydrogenase
+GCF_000342005.1__HPDDJO_06429	D-lactate dehydrogenase VanH-Ao2
+GCF_000342005.1__HPDDJO_07200	adenosylhomocysteinase
+GCF_000389965.1__AMKMJN_00004	phosphogluconate dehydrogenase (NAD(+)-dependent, decarboxylating)
+GCF_000389965.1__AMKMJN_00526	phosphoserine transaminase
+GCF_000389965.1__AMKMJN_00837	hypothetical protein
+GCF_000389965.1__AMKMJN_01419	phosphoglycerate dehydrogenase
+GCF_000389965.1__AMKMJN_01719	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding protein
+GCF_000389965.1__AMKMJN_01836	adenosylhomocysteinase
+GCF_000389965.1__AMKMJN_01845	aspartate-semialdehyde dehydrogenase
+GCF_000389965.1__AMKMJN_02293	Globin
+GCF_000389965.1__AMKMJN_02751	Oxidoreductase
+GCF_000389965.1__AMKMJN_03576	Phosphoglycerate dehydrogenase-like oxidoreductase
+GCF_000389965.1__AMKMJN_04482	D-isomer specific 2-hydroxyacid dehydrogenase nad-binding protein
+GCF_000389965.1__AMKMJN_06926	phosphoglycerate dehydrogenase
+GCF_000400635.2__OEGGAH_01512	D-lactate dehydrogenase VanH-Ao2
+GCF_000400635.2__OEGGAH_01803	Valine dehydrogenase
+GCF_000400635.2__OEGGAH_02267	Aminotransferase class V domain-containing protein
+GCF_000400635.2__OEGGAH_02770	Phosphoglycerate dehydrogenase
+GCF_000400635.2__OEGGAH_03563	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein
+GCF_000400635.2__OEGGAH_04468	adenosylhomocysteinase
+GCF_000400635.2__OEGGAH_05951	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein
+GCF_000400635.2__OEGGAH_06145	Glyoxylate reductase
+GCF_000400635.2__OEGGAH_06347	phosphoglycerate dehydrogenase
+GCF_000400635.2__OEGGAH_06363	Phosphoglycerate dehydrogenase
+GCF_000400635.2__OEGGAH_06831	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein
+GCF_000400635.2__OEGGAH_07383	phosphoserine transaminase
+GCF_000400635.2__OEGGAH_07498	glycine oxidase ThiO
+GCF_000400635.2__OEGGAH_07592	D-3-phosphoglycerate dehydrogenase
+GCF_000400635.2__OEGGAH_07646	Ketopantoate reductase PanG
+GCF_000400635.2__OEGGAH_07683	NAD(P)-dependent oxidoreductase
+GCF_000720955.1__COKKPO_00778	phosphoserine transaminase
+GCF_000720955.1__COKKPO_00831	Myo-inositol 2-dehydrogenase / D-chiro-inositol 1-dehydrogenase
+GCF_000720955.1__COKKPO_01678	NAD(P)-dependent dehydrogenase, short-chain alcohol dehydrogenase family
+GCF_000720955.1__COKKPO_02738	Phosphoglycerate dehydrogenase
+GCF_000720955.1__COKKPO_02868	Phosphoglycerate dehydrogenase
+GCF_000720955.1__COKKPO_02881	phosphoglycerate dehydrogenase
+GCF_000720955.1__COKKPO_03128	Cysteine desulfurase
+GCF_000720955.1__COKKPO_03931	Alanine-glyoxylate aminotransferase apoenzyme
+GCF_000720955.1__COKKPO_04678	D-3-phosphoglycerate dehydrogenase
+GCF_000720955.1__COKKPO_04769	Selenocysteine lyase/Cysteine desulfurase
+GCF_000720955.1__COKKPO_05773	putative baseplate assembly protein
+GCF_000720955.1__COKKPO_06093	hypothetical protein
+GCF_000720955.1__COKKPO_06480	D-3-phosphoglycerate dehydrogenase

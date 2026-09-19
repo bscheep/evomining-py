@@ -34,10 +34,11 @@ METADATA_DIR = DATA / "metadata"
 #: with version 4.0; a different release will legitimately move the MIBiG-derived results.
 MIBIG_GLOB = "mibig_prot_seqs_*.fasta"
 
-#: How many genomes the example set holds. `accessions.txt` lists them; four of the
-#: original 18 los17 entries were RAST-only jobs with no NCBI assembly, so 14 is the
-#: complete set here, not a subset of a download.
-N_GENOMES = 14
+#: How many genomes the example set holds. `accessions.txt` lists them; one of the
+#: original 18 los17 was not included in the ORIGINAL evomining test analysis
+#: 3 others were renamed since. The correct accessions are in the accessions.txt and
+#: are in total 17
+N_GENOMES = 17
 
 
 def pytest_addoption(parser):

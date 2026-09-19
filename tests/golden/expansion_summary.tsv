@@ -1,3 +1,3 @@
 enzyme_family	mean_copies	std	threshold	max_copies	n_expanded_genomes	expanded_genomes
-3PGA_AMINOACIDS|1	4.79	2.48	7.27	9	3	Pseudarthrobacter chlorophenolicus A6(8); Catenulispora acidiphila DSM 44928(9); Amycolatopsis mediterranei U32(8)
+3PGA_AMINOACIDS|1	4.24	2.56	6.79	9	4	Arthrobacter chlorophenolicus A6(8); Catenulispora acidiphila DSM_44928(9); Amycolatopsis mediterranei U32(8); Amycolatopsis orientalis HCCB10007(7)
 3PGA_AMINOACIDS|2	1.00	0.00	1.00	1	0
