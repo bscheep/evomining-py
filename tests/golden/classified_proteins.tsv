@@ -1,0 +1,90 @@
+family	genome_stem	genome_name	protein_id	function	is_bbh	in_antismash	classification	n_copies	is_expanded	mibig_hit
+3PGA_AMINOACIDS|1	GCF_000010425.1	Bifidobacterium adolescentis ATCC_15703	GCF_000010425.1__HMNFIE_01201	phosphoglycerate dehydrogenase	True	False	conserved	3	False	NA
+3PGA_AMINOACIDS|1	GCF_000010425.1	Bifidobacterium adolescentis ATCC_15703	GCF_000010425.1__HMNFIE_00332	4-phosphoerythronate dehydrogenase	False	False	normal	3	False	NA
+3PGA_AMINOACIDS|1	GCF_000010425.1	Bifidobacterium adolescentis ATCC_15703	GCF_000010425.1__HMNFIE_01049	D-3-phosphoglycerate dehydrogenase	False	False	normal	3	False	NA
+3PGA_AMINOACIDS|1	GCF_000014925.1	Arthrobacter aurescens TC1	GCF_000014925.1__GAALLP_02557	phosphoglycerate dehydrogenase	True	False	conserved	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000014925.1	Arthrobacter aurescens TC1	GCF_000014925.1__GAALLP_04711	D-isomer specific 2-hydroxyacid dehydrogenase family protein	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000014925.1	Arthrobacter aurescens TC1	GCF_000014925.1__GAALLP_01993	Glyoxylate reductase	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000014925.1	Arthrobacter aurescens TC1	GCF_000014925.1__GAALLP_04237	Glyoxylate reductase	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000014925.1	Arthrobacter aurescens TC1	GCF_000014925.1__GAALLP_00071	D-isomer specific 2-hydroxyacid dehydrogenase family protein	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000014925.1	Arthrobacter aurescens TC1	GCF_000014925.1__GAALLP_04027	Putative 2-hydroxyacid-family dehydrogenase	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000021425.1	Bifidobacterium animalis subsp_lactis_AD011	GCF_000021425.1__HLOIDO_02409	phosphoglycerate dehydrogenase	True	False	conserved	2	False	NA
+3PGA_AMINOACIDS|1	GCF_000021425.1	Bifidobacterium animalis subsp_lactis_AD011	GCF_000021425.1__HLOIDO_00610	Phosphoglycerate dehydrogenase-like oxidoreductase	False	False	normal	2	False	NA
+3PGA_AMINOACIDS|1	GCF_000022025.1	Arthrobacter chlorophenolicus A6	GCF_000022025.1__JBDPLC_02337	phosphoglycerate dehydrogenase	True	False	conserved	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000022025.1	Arthrobacter chlorophenolicus A6	GCF_000022025.1__JBDPLC_00092	Glyoxylate reductase	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000022025.1	Arthrobacter chlorophenolicus A6	GCF_000022025.1__JBDPLC_00135	C-terminal binding protein	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000022025.1	Arthrobacter chlorophenolicus A6	GCF_000022025.1__JBDPLC_00718	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000022025.1	Arthrobacter chlorophenolicus A6	GCF_000022025.1__JBDPLC_00196	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000022025.1	Arthrobacter chlorophenolicus A6	GCF_000022025.1__JBDPLC_00030	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000022025.1	Arthrobacter chlorophenolicus A6	GCF_000022025.1__JBDPLC_03635	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000022025.1	Arthrobacter chlorophenolicus A6	GCF_000022025.1__JBDPLC_00037	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000023245.1	Actinosynnema mirum DSM_43827	GCF_000023245.1__PHJIBM_06089	phosphoglycerate dehydrogenase	True	False	conserved	4	False	NA
+3PGA_AMINOACIDS|1	GCF_000023245.1	Actinosynnema mirum DSM_43827	GCF_000023245.1__PHJIBM_04222	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	4	False	NA
+3PGA_AMINOACIDS|1	GCF_000023245.1	Actinosynnema mirum DSM_43827	GCF_000023245.1__PHJIBM_06099	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	4	False	NA
+3PGA_AMINOACIDS|1	GCF_000023245.1	Actinosynnema mirum DSM_43827	GCF_000023245.1__PHJIBM_02968	Hydroxyacid dehydrogenase	False	False	normal	4	False	NA
+3PGA_AMINOACIDS|1	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_07825	phosphoglycerate dehydrogenase	True	False	conserved	9	True	NA
+3PGA_AMINOACIDS|1	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_06753	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	9	True	NA
+3PGA_AMINOACIDS|1	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_03834	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	9	True	NA
+3PGA_AMINOACIDS|1	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_00130	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	9	True	NA
+3PGA_AMINOACIDS|1	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_00634	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	9	True	NA
+3PGA_AMINOACIDS|1	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_06858	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	9	True	NA
+3PGA_AMINOACIDS|1	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_05823	D-lactate dehydrogenase VanH	False	False	normal	9	True	NA
+3PGA_AMINOACIDS|1	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_02703	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	9	True	NA
+3PGA_AMINOACIDS|1	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_05307	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding	False	False	normal	9	True	NA
+3PGA_AMINOACIDS|1	GCF_000063485.1	Clavibacter michiganensis subsp_michiganensis_NCPPB_382	GCF_000063485.1__EEPGBJ_01165	phosphoglycerate dehydrogenase	True	False	conserved	2	False	NA
+3PGA_AMINOACIDS|1	GCF_000063485.1	Clavibacter michiganensis subsp_michiganensis_NCPPB_382	GCF_000063485.1__EEPGBJ_01673	Glyoxylate/hydroxypyruvate reductase B	False	False	normal	2	False	NA
+3PGA_AMINOACIDS|1	GCF_000189535.1	Arthrobacter phenanthrenivorans Sphe3	GCF_000189535.1__HLOIDO_02409	phosphoglycerate dehydrogenase	True	False	conserved	2	False	NA
+3PGA_AMINOACIDS|1	GCF_000189535.1	Arthrobacter phenanthrenivorans Sphe3	GCF_000189535.1__HLOIDO_00610	Phosphoglycerate dehydrogenase-like oxidoreductase	False	False	normal	2	False	NA
+3PGA_AMINOACIDS|1	GCF_000195815.1	Corynebacterium diphtheriae NCTC_13129	GCF_000195815.1__HJNBJO_01078	phosphoglycerate dehydrogenase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|1	GCF_000196835.1	Amycolatopsis mediterranei U32	GCF_000196835.1__COODHM_01739	phosphoglycerate dehydrogenase	True	False	conserved	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000196835.1	Amycolatopsis mediterranei U32	GCF_000196835.1__COODHM_01901	Glyoxylate reductase )	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000196835.1	Amycolatopsis mediterranei U32	GCF_000196835.1__COODHM_08497	D-lactate dehydrogenase	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000196835.1	Amycolatopsis mediterranei U32	GCF_000196835.1__COODHM_02792	D-3-phosphoglycerate dehydrogenase (EC)	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000196835.1	Amycolatopsis mediterranei U32	GCF_000196835.1__COODHM_07451	D-isomer specific 2-hydroxyacid dehydrogenase, NAD-binding protein	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000196835.1	Amycolatopsis mediterranei U32	GCF_000196835.1__COODHM_01726	Phosphoglycerate dehydrogenase	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000196835.1	Amycolatopsis mediterranei U32	GCF_000196835.1__COODHM_03271	D-isomer specific 2-hydroxyacid dehydrogenase, NAD-binding protein	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000196835.1	Amycolatopsis mediterranei U32	GCF_000196835.1__COODHM_05483	2-hydroxyacid dehydrogenase	False	False	normal	8	True	NA
+3PGA_AMINOACIDS|1	GCF_000197735.1	Glutamicibacter arilaitensis Re117	GCF_000197735.1__AOHCGL_01536	phosphoglycerate dehydrogenase	True	False	conserved	2	False	NA
+3PGA_AMINOACIDS|1	GCF_000197735.1	Glutamicibacter arilaitensis Re117	GCF_000197735.1__AOHCGL_00463	D-2-hydroxyacid dehydrogenase family protein	False	False	normal	2	False	NA
+3PGA_AMINOACIDS|1	GCF_000224415.1	Citrococcus sp CH26A	GCF_000224415.1__KGNJMP_00350	phosphoglycerate dehydrogenase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|1	GCF_000237145.1	Actinoplanes sp SE50_110	GCF_000237145.1__KPHHJF_07377	phosphoglycerate dehydrogenase	True	False	conserved	3	False	NA
+3PGA_AMINOACIDS|1	GCF_000237145.1	Actinoplanes sp SE50_110	GCF_000237145.1__KPHHJF_01198	phosphoglycerate dehydrogenase	False	False	normal	3	False	NA
+3PGA_AMINOACIDS|1	GCF_000237145.1	Actinoplanes sp SE50_110	GCF_000237145.1__KPHHJF_04095	D-3-phosphoglycerate dehydrogenase	False	False	normal	3	False	NA
+3PGA_AMINOACIDS|1	GCF_000342005.1	Amycolatopsis decaplanina DSM_44594	GCF_000342005.1__HPDDJO_03786	phosphoglycerate dehydrogenase	True	False	conserved	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000342005.1	Amycolatopsis decaplanina DSM_44594	GCF_000342005.1__HPDDJO_03541	Glyoxylate reductase	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000342005.1	Amycolatopsis decaplanina DSM_44594	GCF_000342005.1__HPDDJO_06429	D-lactate dehydrogenase VanH-Ao2	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000342005.1	Amycolatopsis decaplanina DSM_44594	GCF_000342005.1__HPDDJO_03370	Phosphoglycerate dehydrogenase	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000342005.1	Amycolatopsis decaplanina DSM_44594	GCF_000342005.1__HPDDJO_05041	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000342005.1	Amycolatopsis decaplanina DSM_44594	GCF_000342005.1__HPDDJO_01274	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein	False	False	normal	6	False	NA
+3PGA_AMINOACIDS|1	GCF_000389965.1	Actinoplanes sp N902_109	GCF_000389965.1__AMKMJN_06926	phosphoglycerate dehydrogenase	True	False	conserved	5	False	NA
+3PGA_AMINOACIDS|1	GCF_000389965.1	Actinoplanes sp N902_109	GCF_000389965.1__AMKMJN_01419	phosphoglycerate dehydrogenase	False	False	normal	5	False	NA
+3PGA_AMINOACIDS|1	GCF_000389965.1	Actinoplanes sp N902_109	GCF_000389965.1__AMKMJN_04482	D-isomer specific 2-hydroxyacid dehydrogenase nad-binding protein	False	False	normal	5	False	NA
+3PGA_AMINOACIDS|1	GCF_000389965.1	Actinoplanes sp N902_109	GCF_000389965.1__AMKMJN_03576	Phosphoglycerate dehydrogenase-like oxidoreductase	False	False	normal	5	False	NA
+3PGA_AMINOACIDS|1	GCF_000389965.1	Actinoplanes sp N902_109	GCF_000389965.1__AMKMJN_02751	Oxidoreductase	False	False	normal	5	False	NA
+3PGA_AMINOACIDS|1	GCF_000400635.2	Amycolatopsis orientalis HCCB10007	GCF_000400635.2__OEGGAH_06347	phosphoglycerate dehydrogenase	True	False	conserved	7	True	NA
+3PGA_AMINOACIDS|1	GCF_000400635.2	Amycolatopsis orientalis HCCB10007	GCF_000400635.2__OEGGAH_07592	D-3-phosphoglycerate dehydrogenase	False	False	normal	7	True	NA
+3PGA_AMINOACIDS|1	GCF_000400635.2	Amycolatopsis orientalis HCCB10007	GCF_000400635.2__OEGGAH_06145	Glyoxylate reductase	False	False	normal	7	True	NA
+3PGA_AMINOACIDS|1	GCF_000400635.2	Amycolatopsis orientalis HCCB10007	GCF_000400635.2__OEGGAH_02770	Phosphoglycerate dehydrogenase	False	False	normal	7	True	NA
+3PGA_AMINOACIDS|1	GCF_000400635.2	Amycolatopsis orientalis HCCB10007	GCF_000400635.2__OEGGAH_03563	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein	False	False	normal	7	True	NA
+3PGA_AMINOACIDS|1	GCF_000400635.2	Amycolatopsis orientalis HCCB10007	GCF_000400635.2__OEGGAH_01512	D-lactate dehydrogenase VanH-Ao2	False	False	normal	7	True	NA
+3PGA_AMINOACIDS|1	GCF_000400635.2	Amycolatopsis orientalis HCCB10007	GCF_000400635.2__OEGGAH_05951	D-isomer specific 2-hydroxyacid dehydrogenase NAD-binding domain-containing protein	False	False	normal	7	True	NA
+3PGA_AMINOACIDS|1	GCF_000720955.1	Allokutzneria albata JOEF01	GCF_000720955.1__COKKPO_02881	phosphoglycerate dehydrogenase	True	False	conserved	3	False	NA
+3PGA_AMINOACIDS|1	GCF_000720955.1	Allokutzneria albata JOEF01	GCF_000720955.1__COKKPO_06480	D-3-phosphoglycerate dehydrogenase	False	False	normal	3	False	NA
+3PGA_AMINOACIDS|1	GCF_000720955.1	Allokutzneria albata JOEF01	GCF_000720955.1__COKKPO_04678	D-3-phosphoglycerate dehydrogenase	False	False	normal	3	False	NA
+3PGA_AMINOACIDS|2	GCF_000010425.1	Bifidobacterium adolescentis ATCC_15703	GCF_000010425.1__HMNFIE_00413	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000014925.1	Arthrobacter aurescens TC1	GCF_000014925.1__GAALLP_01047	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000021425.1	Bifidobacterium animalis subsp_lactis_AD011	GCF_000021425.1__HLOIDO_00827	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000022025.1	Arthrobacter chlorophenolicus A6	GCF_000022025.1__JBDPLC_00930	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000023245.1	Actinosynnema mirum DSM_43827	GCF_000023245.1__PHJIBM_00529	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000024025.1	Catenulispora acidiphila DSM_44928	GCF_000024025.1__DCMODH_08839	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000063485.1	Clavibacter michiganensis subsp_michiganensis_NCPPB_382	GCF_000063485.1__EEPGBJ_02587	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000189535.1	Arthrobacter phenanthrenivorans Sphe3	GCF_000189535.1__HLOIDO_00827	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000195815.1	Corynebacterium diphtheriae NCTC_13129	GCF_000195815.1__HJNBJO_00766	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000196835.1	Amycolatopsis mediterranei U32	GCF_000196835.1__COODHM_08670	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000197735.1	Glutamicibacter arilaitensis Re117	GCF_000197735.1__AOHCGL_00620	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000224415.1	Citrococcus sp CH26A	GCF_000224415.1__KGNJMP_00759	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000237145.1	Actinoplanes sp SE50_110	GCF_000237145.1__KPHHJF_00445	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000342005.1	Amycolatopsis decaplanina DSM_44594	GCF_000342005.1__HPDDJO_05576	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000389965.1	Actinoplanes sp N902_109	GCF_000389965.1__AMKMJN_00526	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000400635.2	Amycolatopsis orientalis HCCB10007	GCF_000400635.2__OEGGAH_07383	phosphoserine transaminase	True	False	conserved	1	False	NA
+3PGA_AMINOACIDS|2	GCF_000720955.1	Allokutzneria albata JOEF01	GCF_000720955.1__COKKPO_00778	phosphoserine transaminase	True	False	conserved	1	False	NA

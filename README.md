@@ -21,7 +21,7 @@ installs the external tools (`blast`, `muscle` v5, `mafft`, `trimal`,
 git clone https://github.com/bscheep/evomining-py.git
 cd evomining-py
 micromamba env create -f environment.yml
-micromamba activate evomining
+micromamba activate evomining-py
 evomining check           # verify every external tool resolves
 ```
 
@@ -276,6 +276,99 @@ for `generate-antismash-db` to line up. Duplicate stems (e.g. a flat
 `Foo.gbff` alongside a `Foo/` folder, or `Foo.gbff` next to `Foo.gbff.gz`) are a
 hard error.
 
+## Running the tests
+
+```bash
+pip install -e ".[dev]"
+
+pytest -m "not genomes"    # fast: no genomes, no external tools, seconds
+pytest                     # everything, needs the genomes and the toolchain
+```
+
+The suite is a **characterization suite**: it runs evomining-py over the EvoMining
+"los17" example genomes and compares the result against committed snapshots in
+`tests/golden/`. There is no second implementation to check against — evomining-py's own
+current output *is* the baseline. So these tests answer "did anything change?", not "is
+this biologically correct".
+
+When a snapshot diff is intended:
+
+```bash
+pytest --update-golden     # rewrite the snapshots, then review the git diff
+```
+
+Reviewing that diff is the whole point. A snapshot updated without reading it launders a
+regression into the baseline.
+
+### Tiers
+
+| | needs | runtime |
+|---|---|---|
+| `test_analyze.py` | nothing — replays committed BLAST output (~130 KB) | seconds |
+| `test_genome_db.py` | the genomes | ~15 s |
+| `test_pipeline.py` | the genomes and the toolchain | ~1 min |
+| `test_trees.py` | the genomes, the toolchain and MIBiG | ~1 min |
+
+Markers let you select tiers: `-m "not genomes"` for the fast one, `-m mibig` for the
+tree/prediction tests.
+
+The fast tier works because `analyze` only ever looks up proteins it has a BLAST hit for,
+so trimmed metadata covering just those 150 proteins gives byte-identical output to the
+full 86k-protein tables. `test_pipeline.py` re-derives that BLAST output from the genomes
+and asserts it still matches the committed fixture — without it, the fast tier could drift
+into passing against a stale baseline.
+
+### Getting the input data
+
+Two inputs are downloaded separately rather than committed. Tests that need them skip
+with these instructions when they are absent.
+
+#### MIBiG proteins
+
+Download the **MIBiG proteins** FASTA from
+<https://mibig.secondarymetabolites.org/download> and place it in `tests/data/`, keeping
+its `mibig_prot_seqs_<version>.fasta` name:
+
+```
+tests/data/mibig_prot_seqs_4.0.fasta
+```
+
+It is ~31 MB. The committed snapshots were generated with **MIBiG 4.0** — a different
+release will legitimately change the MIBiG-derived results (which references land in the
+tree, and therefore how many EvoMining predictions are called), so expect to review and
+`--update-golden` if you upgrade it.
+
+MIBiG is what makes the tree tier meaningful: `find_evomining_predictions` walks outward
+from MIBiG reference leaves, so without it there are no seeds, no walk, and the green
+"EvoMining prediction" class is never reached.
+
+#### Genomes
+
+The 14 example genomes are 233 MB of GenBank and are **not committed**. Fetch them with
+the accessions in `tests/data/accessions.txt`:
+
+```bash
+datasets download genome accession --inputfile tests/data/accessions.txt \
+    --include gbff --filename los17_gbff.zip
+```
+
+Unpack one `<accession>.gbff` per genome into `tests/data/los17_genomes/`. Annotation
+(`--include gbff`) is required — evomining-py reads CDS `/translation` and cannot use
+sequence-only `.fna`. Tests needing them skip with these instructions when they are absent.
+
+### Scope and caveats
+
+Covered: `genomedb.py`, `start.py`, `analysis.py`, `trees.py` (including the MIBiG
+prediction path). Not covered: `antismashdb.py`, `cli.py`, and `enzymedb.py` beyond the
+canonical-FASTA path.
+
+- The dataset is **14 genomes, not the original 17** — four los17 entries were RAST-only
+  jobs with no NCBI assembly. Copy counts are close to the 2015 figures but this is not a
+  reproduction of the published example.
+- Tree topology is deliberately not snapshotted: it depends on MUSCLE and FastTree
+  versions rather than on anything this codebase decides. Leaf sets and classifications
+  are.
+
 ## Changes from the original EvoMining
 
 The original EvoMining (EvoMining 2.0, Selem-Mojica et al. 2019) is a Perl
@@ -315,11 +408,23 @@ trees — but changes how it is run and what it consumes:
    own `custom|N` family.
 
 Notes:
-1. This version uses the same logic, but newer tools might result in different outcomes
-   For calculation of the expanded enzymes, the paper stated mean + 2SD but the old tool
-   used mean + 1SD in the code, while the example was I think generated with median + 1
-   In the end I setteld for mean + 1 SD like the original code, but made this customizable
-   to 2 SD or more. Median + 1 is not supported now
+1. This version uses the same logic, but newer tools might result in different outcomes.
+   For calculation of the expanded enzymes, the paper stated mean + 2SD and the old code
+   reads as mean + 1SD. Instrumenting the original (`heatplot.pl:305-313`) on the example
+   shows what it *actually* computed — neither the paper's rule nor median + 1:
+
+   - the mean divides by `$#tabla`, Perl's **last index**, i.e. `n-1` (16) rather than
+     `n` (17), so the original's mean is higher than a true mean;
+   - `$std` is read from the **previous family's** slot, because `@arrpasos` is filled
+     from index 1 while the loop reads from 0. The first family therefore gets the
+     standard deviation of an empty vector — `Statistics::Basic` returns `n/a`, which
+     numifies to 0 — so its threshold collapses to the bare mean;
+   - the comparison is `>=` (`heatplot.pl:387`), not `>`.
+
+   Both of the first two look like defects rather than intent. This version uses a true
+   mean + 1SD of the same family with strict `>`, customizable to 2SD or more, which is
+   more conservative: on the example it calls 4 genomes expanded where the original called
+   7, and its set is a strict subset. `tests/test_analyze_equivalence.py` pins this.
 2. It was tested with the original example data (to be added) and gives similar result
    but slightly different tree topology and classifications.
 3. Notably there are less cyan (antismash) nodes in the example data with this version

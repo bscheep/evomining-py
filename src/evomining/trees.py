@@ -339,7 +339,7 @@ def collect_family_sequences(family, members, central_seqs, genome_seqs, mibig_s
         subs = mibig_hits.get(m["protein_id"])
         if subs:
             subjects_to_add |= subs
-    for mibig_subject in subjects_to_add:
+    for mibig_subject in sorted(subjects_to_add): # sort for reproducibility between runs
         if mibig_subject in mibig_seqs:
             _, mseq = mibig_seqs[mibig_subject]
             if len(mseq) > MAX_SEQ_LEN:

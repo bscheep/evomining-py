@@ -6,7 +6,7 @@
 #
 #   This is a refactor of the original Perl EvoMining to Python
 
-name: evomining
+name: evomining-py
 channels:
   - conda-forge
   - bioconda
@@ -22,5 +22,7 @@ dependencies:
   - trimal=1.5.1
   - fasttree=2.2.0
   - newick_utils=1.6
+  # --- tests ---
+  - pytest
   - pip:
       - .
