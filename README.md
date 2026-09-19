@@ -21,7 +21,7 @@ installs the external tools (`blast`, `muscle` v5, `mafft`, `trimal`,
 git clone https://github.com/bscheep/evomining-py.git
 cd evomining-py
 micromamba env create -f environment.yml
-micromamba activate evomining
+micromamba activate evomining-py
 evomining check           # verify every external tool resolves
 ```
 

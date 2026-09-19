@@ -6,7 +6,7 @@
 #
 #   This is a refactor of the original Perl EvoMining to Python
 
-name: evomining
+name: evomining-py
 channels:
   - conda-forge
   - bioconda
