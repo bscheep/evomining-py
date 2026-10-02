@@ -60,6 +60,8 @@ def build_parser():
     p.add_argument("--keep-pseudogenes", action="store_true",
                    help="keep pseudogene CDS (default: drop them; they are not functional "
                         "enzymes and can inflate copy counts). Use for continuity with older runs.")
+    p.add_argument("-j", "--jobs", type=int, default=8,
+                   help="number of parallel jobs to use (default: 8)")
 
     # -- generate-enzyme-db --
     p = sub.add_parser("generate-enzyme-db", aliases=["enzyme-db"],
