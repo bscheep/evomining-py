@@ -175,15 +175,25 @@ def from_fasta_dir(fasta_dir, pathway_name="custom"):
     Build Central DB from a directory of FASTA files, one file per enzyme family.
     All sequences in a file become that family's seeds.
 
-    The filename encodes the family, optionally with a subsystem prefix:
+    The filename encodes the family and its function, optionally with a
+    subsystem prefix:
 
       SUBSYSTEM__enzyme.faa   ->  family key "SUBSYSTEM|<n>"  (subsystem taken
-                                  from the part before the '__' separator)
+                                  from the part before the '__' separator;
+                                  `enzyme` becomes the Function field shared
+                                  by every seed in the family)
       enzyme.faa              ->  family key "enzyme"         (no subsystem; falls
                                   back to --custom-pathway-name at write time)
 
     e.g. `3PGA_AMINOACIDS__cysteine_synthase.faa` groups under subsystem
-    3PGA_AMINOACIDS, while `cysteine_synthase.faa` gets the default pathway name.
+    3PGA_AMINOACIDS with Function "cysteine_synthase", while
+    `cysteine_synthase.faa` gets the default pathway name.
+
+    Each sequence's own header is carried through UNCHANGED and becomes that
+    seed's Organism/comment field -- it is never parsed, split, or discarded.
+    This is what lets a composite `<genome_stem>__<locus_tag>` header end up
+    as the seed's organism identity downstream (trees.py keys its Central DB
+    seed lookup on the full header, and uses this field to label tree leaves).
     """
     families = {}
     fasta_dir = Path(fasta_dir)
@@ -198,11 +208,25 @@ def from_fasta_dir(fasta_dir, pathway_name="custom"):
             subsystem = sanitize_name(subsystem)
             enzyme = sanitize_name(enzyme)
             # Key on "subsystem|enzyme" so write_central_db keeps the subsystem
-            # prefix; the enzyme part is preserved in the seed labels.
+            # prefix; the enzyme part becomes the shared Function label.
             family_key = f"{subsystem}|{enzyme}"
         else:
-            family_key = sanitize_name(stem)
-        families[family_key] = entries
+            enzyme = sanitize_name(stem)
+            family_key = enzyme
+
+        seen_headers = set()
+        for header, _ in entries:
+            if header in seen_headers:
+                print(f"  WARNING: duplicate sequence header {header!r} in "
+                      f"{fasta_file.name} -- these seeds will collide "
+                      f"downstream (no per-seed query number is added in "
+                      f"this mode; uniqueness relies on distinct headers).",
+                      file=sys.stderr)
+            seen_headers.add(header)
+
+        # (function_label, organism_field, seq) -- organism_field is the
+        # seed's own header, untouched, relied on for per-seed uniqueness.
+        families[family_key] = [(enzyme, header, seq) for header, seq in entries]
 
     return families
 
@@ -317,7 +341,13 @@ def write_central_db(families, output_file, pathway_name="custom"):
     """
     Write EvoMining-compatible Central DB FASTA.
 
-    Format: >SUBSYSTEM|family_number|EnzymeName_querynumber|custom
+    Format: >SUBSYSTEM|family_number|Function|Organism
+
+    Seeds from --fasta-dir carry a real per-seed Organism (the sequence's own
+    header, untouched) and share one Function label per family (from the
+    filename). Seeds from --tsv / --transcripts keep the legacy behaviour:
+    Function gets a unique trailing query number and Organism falls back to
+    the literal pathway_name (neither mode tracks a real organism per seed).
 
     The family_number must be an integer (it defines a heatplot column, and
     analysis.parse_central_header keys the family on SUBSYSTEM|family_number).
@@ -355,16 +385,24 @@ def write_central_db(families, output_file, pathway_name="custom"):
             family_num = subsystem_counter[subsystem]
 
             for i, seed in enumerate(seeds):
-                if isinstance(seed, tuple):
+                if isinstance(seed, tuple) and len(seed) == 3:
+                    # fasta-dir mode: function is shared by the whole family
+                    # (from the filename); organism is the seed's own header,
+                    # already unique, so no query-number suffix is needed.
+                    seed_name, organism, seq = seed
+                    func_label = sanitize_name(seed_name)
+                    organism_clean = sanitize_name(organism)
+                elif isinstance(seed, tuple):
+                    # tsv / transcripts mode: unchanged legacy behaviour.
                     seed_name, seq = seed
+                    func_label = f"{sanitize_name(seed_name)}_{i+1}"
+                    organism_clean = pathway_name
                 else:
-                    seed_name = f"seed_{i+1}"
                     seq = seed
+                    func_label = f"seed_{i+1}"
+                    organism_clean = pathway_name
 
-                # Function label carries the enzyme name + a unique query number.
-                seed_name_clean = sanitize_name(seed_name)
-                func_label = f"{seed_name_clean}_{i+1}"
-                header = f">{subsystem}|{family_num}|{func_label}|custom"
+                header = f">{subsystem}|{family_num}|{func_label}|{organism_clean}"
                 fh.write(f"{header}\n")
                 for j in range(0, len(seq), 60):
                     fh.write(seq[j:j+60] + "\n")
