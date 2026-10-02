@@ -11,10 +11,15 @@ from __future__ import annotations
 import logging
 from pathlib import Path
 
-from .genbank import GENBANK_SUFFIXES, is_genbank
+from .genbank import GENBANK_SUFFIXES, genbank_suffix, genome_stem, is_genbank
 from .models import GenomeMetadata
 
 logger = logging.getLogger(__name__)
+
+
+def _accepted() -> str:
+    """The recognised GenBank extensions, for error messages."""
+    return ", ".join(sorted(GENBANK_SUFFIXES)) + " (optionally .gz)"
 
 
 def discover(paths: list[Path]) -> list[Path]:
@@ -39,8 +44,7 @@ def discover(paths: list[Path]) -> list[Path]:
             continue
 
         raise FileNotFoundError(
-            f"{path}: no GenBank files found "
-            f"({', '.join(sorted(GENBANK_SUFFIXES))})."
+            f"{path}: no GenBank files found ({_accepted()})."
         )
 
     if not found:
@@ -55,7 +59,7 @@ _GB_PREFERENCE = (".gbff", ".gbk", ".gb", ".genbank")
 def _choose_genbank(files: list[Path], label: str) -> Path:
     """Pick the single GenBank file for one genome folder, or fail clearly."""
     for suffix in _GB_PREFERENCE:
-        matches = [f for f in files if f.suffix.lower() == suffix]
+        matches = [f for f in files if genbank_suffix(f) == suffix]
         if len(matches) == 1:
             return matches[0]
         if len(matches) > 1:
@@ -89,7 +93,7 @@ def resolve_genome_inputs(root: Path) -> list[tuple[Path, str]]:
     root = Path(root)
     if root.is_file():
         if is_genbank(root):
-            return [(root, root.stem)]
+            return [(root, genome_stem(root))]
         raise FileNotFoundError(f"{root}: not a GenBank file.")
     if not root.is_dir():
         raise FileNotFoundError(f"{root}: no such file or directory")
@@ -99,7 +103,7 @@ def resolve_genome_inputs(root: Path) -> list[tuple[Path, str]]:
     # flat: GenBank files sitting directly in root -> stem = file stem
     for p in sorted(root.iterdir()):
         if p.is_file() and is_genbank(p):
-            pairs.append((p, p.stem))
+            pairs.append((p, genome_stem(p)))
 
     # nested: each immediate sub-folder holding GenBank file(s) -> stem = folder
     for sub in sorted(root.iterdir()):
@@ -112,8 +116,7 @@ def resolve_genome_inputs(root: Path) -> list[tuple[Path, str]]:
     if not pairs:
         raise FileNotFoundError(
             f"{root}: no GenBank files found -- neither directly "
-            f"({', '.join(sorted(GENBANK_SUFFIXES))}) nor one level down in "
-            f"per-genome sub-folders."
+            f"({_accepted()}) nor one level down in per-genome sub-folders."
         )
 
     seen: dict[str, Path] = {}

@@ -74,9 +74,9 @@ evomining generate-genome-db -i <genomes_dir> --list-dir <lists_dir>
 ```
 
 - **`-i, --input-dir`** — genome input. Accepts either a flat directory of
-  GenBank files (`.gbff`/`.gbk`), or a directory of one-subdirectory-per-genome
-  holding each genome's annotation, or a mix of the two (see *Genome input
-  layout* below). Proteins are read directly from the GenBank `/translation`
+  GenBank files (`.gbff`/`.gbk`, optionally gzipped), or a directory of
+  one-subdirectory-per-genome holding each genome's annotation, or a mix of the
+  two (see *Genome input layout* below). Proteins are read directly from the GenBank `/translation`
   features — no `.faa` is required. In the flat layout the genome stem is the
   filename; in the per-genome-folder layout it is the folder name, which must
   match the names in your list files (case-sensitive) and your antiSMASH
@@ -268,10 +268,17 @@ exactly one GenBank file; if it holds more than one the tool prefers `.gbff`,
 then `.gbk`/`.gb`/`.genbank`, and stops with an error naming the files rather
 than guessing.
 
+**Gzipped input** — any GenBank file may be gzipped (`.gbff.gz`, `.gbk.gz`, …)
+and is decompressed on the fly, so RefSeq / NCBI `datasets` downloads can be used
+as-is. Compressed and uncompressed files may be mixed freely in one input
+directory. Only the genome input is gzip-aware; the Central DB, MIBiG FASTA and
+generated `GENOMES.fasta` are handed to BLAST, which needs them uncompressed.
+
 Genome stems namespace every protein ID (`<genome_stem>__<locus_tag>`), so they
 must be unique across the input and must equal your antiSMASH directory names
 for `generate-antismash-db` to line up. Duplicate stems (e.g. a flat
-`Foo.gbff` alongside a `Foo/` folder) are a hard error.
+`Foo.gbff` alongside a `Foo/` folder, or `Foo.gbff` next to `Foo.gbff.gz`) are a
+hard error.
 
 ## Running the tests
 

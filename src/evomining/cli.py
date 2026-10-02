@@ -48,7 +48,7 @@ def build_parser():
     p = sub.add_parser("generate-genome-db", aliases=["genome-db"],
                        help="GenBank (.gbff) genomes -> EvoMining protein DB (no RAST)")
     p.add_argument("-i", "--input-dir", required=True,
-                   help="directory of GenBank (.gbff/.gbk) files, one per genome")
+                   help="directory of GenBank (.gbff/.gbk, optionally .gz) files, one per genome")
     p.add_argument("-l", "--lists", nargs="+", default=None,
                    help="restrict to these genome stems; .txt files, one stem per line")
     p.add_argument("--list-dir", default=None,
