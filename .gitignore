@@ -10,12 +10,13 @@ __pycache__/
 # Example genomes: 233 MB of GenBank downloaded from NCBI, too large to commit.
 # tests/data/accessions.txt lists what to fetch; tests needing them skip when absent.
 # Everything else under tests/data/ IS committed (the enzyme DB and the BLAST fixture),
-# so keep this rule pointed at the genome directory rather than at tests/data/.
+# so keep this rule pointed at the genome directory rather than at tests/data/. bob_bakta_los17 were
+# the original that Bob used
 tests/data/los17_genomes/
-
+tests/data/bob_bakta_los17
 # Full MIBiG protein set (~31 MB). Only `analyze --mibig` needs it; the tree tests use
 # the 30-sequence subset in tests/data/mibig/, which is verified to give the same result.
-tests/data/mibig_prot_seqs_*.fasta
+### For continuity, the Mibig db will be part of the commit, it's below the github limit
 
 # dev scratch — never publish these
 baks/

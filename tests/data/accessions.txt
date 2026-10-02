@@ -24,5 +24,5 @@ GCF_000195815.1	Corynebacterium diphtheriae NCTC 13129
 GCF_000224415.1	Citrococcus sp CH26A
 GCF_000197735.1	Glutamicibacter_arilaitensis_Re117
 GCF_000189535.1	Pseudarthrobacter phenanthrenivorans Sphe3 #Arthrobacter
-GCF_000014925.1	Paenarthrobacter aurescens TC1 # Now known as Arthrobacter
+GCF_000014925.1	Paedarthrobacter aurescens TC1 # Now known as Arthrobacter
 GCF_000022025.1	Pseudarthrobacter chlorophenolicus A6 #Now known as Arthrobacter
